@@ -7,9 +7,10 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-
+var apply = require('./routes/apply');
 var app = express();
-
+app.get('/apply', apply.index);
+app.post('/add_apply', apply.add_apply);
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
