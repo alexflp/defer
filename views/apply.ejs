@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Flash Pay</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
   </head>
   <body>
-    <h1>HHH</h1>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div id="apply">
+      <form>
+  <div class="form-icons">
+    <h4>Apply Form</h4>
+    <div class="input-group"><span class="input-group-label"><i class="material-icons">account_circle</i></span>
+      <input class="input-group-field" type="text" placeholder="Contact name"/>
+    </div>
+    <div class="input-group"><span class="input-group-label"></span>
+      <input class="input-group-field" type="text" placeholder="Contact Title"/>
+    </div>
+    <div class="input-group"><span class="input-group-label">
+      <i class="material-icons"> email</i></span>
+      <input class="input-group-field" type="text" placeholder="Email"/>
+    </div>
+    <div class="input-group"><span class="input-group-label"><i class="material-icons">phone</i></span>
+      <input class="input-group-field" type="text" placeholder="Phone number"/>
+    </div>
+    <div class="input-group"><span class="input-group-label"><i class="material-icons">store</i></span>
+      <input class="input-group-field" type="text" placeholder="Store Name"/>
+    </div>
+    <div class="input-group"><span class="input-group-label"></span>
+      <input class="input-group-field" type="text" placeholder="Industry of Business"/>
+    </div>
+    <div class="input-group"><span class="input-group-label"></span>
+      <input class="input-group-field" type="text" placeholder="Business Registered Number"/>
+    </div>
+    <div class="input-group"><span class="input-group-label"><i class="material-icons">location_on</i></span>
+      <input class="input-group-field" type="text" placeholder="Store Address"/>
+    </div>
+    <div class="input-group"><span class="input-group-label"><i class="material-icons">web</i></span>
+      <input class="input-group-field" type="text" placeholder="Store Website"/>
+    </div>
+    <div class="input-group"><span class="input-group-label"><i class="material-icons">note</i></span>
+      <input class="input-group-field" type="text" placeholder="Note"/>
+    </div>
+  </div>
+  <button id="appbt" class="btn btn-lg btn-primary" type="button">Submit</button>
+  <a href="/#home" id="backbt" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Back</a>
+</form>
+
+    </div>
   </body>
 </html>

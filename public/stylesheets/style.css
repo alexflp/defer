@@ -1,8 +1,295 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body ,HTML{
+  width:100%;
+  height: 100%;
+  font-family: 'Gloria Hallelujah', cursive;
+  background-color: white;
 }
 
 a {
   color: #00B7FF;
+}
+
+.nav.justify-content-end {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.35s ease;
+}
+
+.nav.justify-content-end li a {
+  padding: 0.75rem 0;
+  color: rgba(10, 10, 10, 0.5);
+  position: relative;
+  margin-left: 1rem;
+}
+
+.nav.justify-content-end li:first-child a {
+  margin-left: 0;
+}
+
+.nav.justify-content-end li.active > a {
+  background-color: transparent;
+}
+
+.nav.justify-content-end a:before,
+.nav.justify-content-end a::after {
+  height: 3px;
+  position: absolute;
+  content: '';
+  transition: all 0.35s ease;
+  background-color: #1779ba;
+  width: 0;
+}
+
+.nav.justify-content-end a::before {
+  top: 0;
+  left: 0;
+}
+
+.nav.justify-content-end a::after {
+  bottom: 0;
+  right: 0;
+}
+
+.nav.justify-content-end a:hover,
+.nav.justify-content-end li.active > a {
+  color: #0a0a0a;
+  transition: all 0.35s ease;
+}
+
+.nav.justify-content-end a:hover::before,
+.nav.justify-content-end .active a::before,
+.nav.justify-content-end a:hover::after,
+.nav.justify-content-end .active a::after {
+  width: 100%;
+}
+
+
+
+#applybt{
+  width: 20%;
+}
+
+
+#service{
+  width: 100%;
+  height:AUTO;
+  background-color:#6AB8F9;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color:white;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 400;
+
+}
+
+h3{
+  text-align: center;
+}
+
+#service1, #service3{
+  padding-left: 4%;
+}
+
+#service2{
+  padding-right: 4%;
+}
+
+
+#onoffline{
+  /*background-color:#01C3FE;*/
+  height: auto;
+  font-family:  'Anton', sans-serif;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+#onoffline h3{
+  padding-top: 2%;
+}
+
+#offlinebt,#onlinebt{
+  margin-top:  0.5%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+.card i.material-icons{
+  font-size: 60px;
+}
+
+.card img{
+  height:50%;
+}
+
+#online{
+  display:none;
+}
+
+#offline{
+  display:inline ;
+}
+
+.card:hover{
+  background-color: #DDDDDD;
+}
+
+
+#solution{
+    background-color: #0FBFF2;
+    height:auto;
+    text-align: center;
+    padding: 10% 10% 10% 10%;
+    }
+
+
+#solution i.material-icons{
+  font-size: 65px;
+  border-style: solid;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.modal-content{
+
+  margin-top: 30%;
+  padding: 10% 10% 10% 10%;
+    text-align: center;
+}
+
+
+#feature{
+  padding-top: 4%;
+  width: 100%;
+  height: auto;
+  padding-left: 4%;
+  background-color:#2B2D2D;
+  padding-bottom: 5%;
+  color:white;
+  font-family:'Fjalla One',serif;
+}
+
+.col-3 {
+  text-align: center;
+  border: solid;
+  border-radius: 16px;
+  width: 20%;
+  margin-right: 2%;;
+}
+.col-3 i{
+  font-size: 50px;
+  margin-bottom: 10%;
+  color:white;
+}
+
+#botrow{
+  margin-top: 3%;
+
+}
+
+#f1,#f2,#f3{
+  margin-bottom: 3%;
+}
+
+.col-3 i:hover{
+
+  color:#7ce738;
+}
+#f1:hover{
+  background-color: #DADCAC;
+  color:white;
+}
+
+#f2:hover{
+  background-color: #DADCAC;
+  color:white;
+}
+
+#f3:hover{
+  background-color: #DADCAC;
+  color:white;
+}
+
+#contact{
+  margin-top: 3%;
+  width: 100%;
+  height: AUTO;
+  text-align: center;
+  font-family: 'Russo One',serif;
+  padding-bottom: 2%;
+
+}
+#conleft i{
+  font-size: 30px;
+}
+
+#googleMap{
+  height: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#apply{
+
+  height: 100%;
+}
+
+#apply form{
+  padding-top: 5%;
+  height 100%;
+
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+
+  border-radius: 40px;
+}
+
+
+
+
+.input-group{
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.input-group-field{
+  width: 70%;
+}
+span.input-group-label{
+  width: 20%;
+}
+span.input-group-label i.material-icons{
+  font-size: 36px;
+  color:#031226;
+}
+
+
+
+input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+#appbt, #backbt{
+  width: 20%;
 }
