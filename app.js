@@ -9,8 +9,43 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var apply = require('./routes/apply');
 var app = express();
+app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/apply', apply.index);
 app.post('/add_apply', apply.add_apply);
+
+
+var mysql = require('mysql');
+var pool = mysql.createPool({
+     connectionLimit : 100, //focus it
+    host : 'aa1iekxy5aj3cn8.cgiqg4kguirw.us-west-2.rds.amazonaws.com',
+    user : 'flash',
+    password : 'flash123',
+    port: '3306'
+});
+
+
+app.post('/insert',function(req,res){
+    console.log("GET DTAT");
+    console.log(req.body);
+    pool.getConnection(function(error,conn){
+
+    var queryString = "insert into flasht(conatct_name,conatct_title,email,phone,store,IOB,BRN,storea,web,note) values('"+req.body.conatct_name+"','"+req.body.conatct_title+"','"+req.body.email+"','"+req.body.phone+"','"+req.body.store+"','"+req.body.IOB+"','"+req.body.BRN+"','"+req.body.storea+"','"+req.body.web+"','"+req.body.note+"')";
+
+    conn.query(queryString,function(error,results){
+        if(error)
+            {
+                throw error;
+            }
+        else
+            {
+              res.render('index')
+            }
+
+      });
+      conn.release();
+    });
+
+});
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');

@@ -286,6 +286,9 @@ h3{
 
 .input-group-field{
   width: 70%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
 }
 span.input-group-label{
   width: 20%;
@@ -297,11 +300,9 @@ span.input-group-label i.material-icons{
 
 
 
-input[type=text] {
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #000000;
-}
+
+
+
 #appbt, #backbt{
   width: 20%;
 }
