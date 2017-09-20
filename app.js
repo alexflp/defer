@@ -39,7 +39,7 @@ app.post('/insert',function(req,res){
             }
         else
             {
-              res.render('index')
+              res.send('We will contact you soon')
             }
 
       });
