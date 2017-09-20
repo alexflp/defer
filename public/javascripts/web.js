@@ -53,3 +53,12 @@ $(document).ready(function(){
    $('#f3').addClass('animated pulse');
     });
 });
+
+
+
+
+$(document).ready(function(){
+    $('#appbt').click(function(){
+      alert('document.getElementByClassName("input-group").value');
+    });
+});
