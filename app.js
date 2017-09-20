@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var apply = require('./routes/apply');
+var insert =require('./routes/insert');
 var app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/apply', apply.index);
