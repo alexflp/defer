@@ -17,10 +17,11 @@ app.post('/add_apply', apply.add_apply);
 var mysql = require('mysql');
 var pool = mysql.createPool({
      connectionLimit : 100, //focus it
-    host : 'aa1iekxy5aj3cn8.cgiqg4kguirw.us-west-2.rds.amazonaws.com',
-    user : 'flash',
-    password : 'flash123',
-    port: '3306'
+     host     : 'ffkk.cgiqg4kguirw.us-west-2.rds.amazonaws.com',
+     user     : 'flo',
+     password : 'flash123',
+     port     : '3306',
+     database : 'flouser'
 });
 
 
