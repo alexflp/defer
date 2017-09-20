@@ -4,3 +4,5 @@ exports.index = function(req, res) {
 
 exports.add_apply = function(req, res) {
 };
+
+module.exports = router;
