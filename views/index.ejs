@@ -300,6 +300,51 @@
       </div>
       </div>
     </div>
+
+    <div id="apply">
+      <form role="form" action="/apply" method="POST">
+        <div class="form-icons" >
+          <h4>Apply Form</h4>
+          <div class="input-group"><span class="input-group-label"><i class="material-icons">account_circle</i></span>
+            <input class="input-group-field" type="text" id="contact_name" name="conatct_name" placeholder="Contact name"/>
+          </div>
+          <div class="input-group"><span class="input-group-label"></span>
+            <input class="input-group-field" type="text" id="contact_title" name="conatct_title" placeholder="Contact Title"/>
+          </div>
+          <div class="input-group"><span class="input-group-label">
+            <i class="material-icons"> email</i></span>
+            <input class="input-group-field" type="email" id="email" name="email" placeholder="Email"/>
+          </div>
+          <div class="input-group"><span class="input-group-label"><i class="material-icons">phone</i></span>
+            <input class="input-group-field" type="number" id="phone" name="phone" placeholder="Phone number"/>
+          </div>
+          <div class="input-group"><span class="input-group-label"><i class="material-icons">store</i></span>
+            <input class="input-group-field" type="text" id="store" name="store" placeholder="Store Name"/>
+          </div>
+          <div class="input-group"><span class="input-group-label"></span>
+            <input class="input-group-field" type="text" id="IOB" name="IOB" placeholder="Industry of Business"/>
+          </div>
+          <div class="input-group"><span class="input-group-label"></span>
+            <input class="input-group-field" type="text" id="BRN" name="BRN" placeholder="Business Registered Number"/>
+          </div>
+          <div class="input-group"><span class="input-group-label"><i class="material-icons">location_on</i></span>
+            <input class="input-group-field" type="text" id="storea" name="storea"placeholder="Store Address"/>
+          </div>
+          <div class="input-group"><span class="input-group-label"><i class="material-icons">web</i></span>
+            <input class="input-group-field" type="text" id="web" name="web" placeholder="Store Website"/>
+          </div>
+          <div class="input-group"><span class="input-group-label"><i class="material-icons">note</i></span>
+            <input class="input-group-field" type="text" id="note" name="note" placeholder="Note"/>
+          </div>
+        </div>
+        <button   id="appbt" class="btn btn-lg btn-primary" type="submit">Submit</button>
+        <a href="/#home" id="backbt" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Back</a>
+      </form>
+
+    </div>
+
+
+
     <div id="googleMap"></div>
     <script>
     function myMap() {
