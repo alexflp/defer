@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var apply = require('./routes/apply');
-var insert =require('./routes/insert');
+
 var app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/apply', apply.index);
@@ -26,7 +26,7 @@ var pool = mysql.createPool({
 });
 
 
-app.post('/insert',function(req,res){
+app.post('/apply',function(req,res){
     console.log("GET DTAT");
     console.log(req.body);
     pool.getConnection(function(error,conn){
